@@ -1,7 +1,0 @@
-from transformers import BertTokenizer
-
-tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
-
-sentence = "Machine Learning is powerful."
-
-print(tokenizer.tokenize(sentence))
