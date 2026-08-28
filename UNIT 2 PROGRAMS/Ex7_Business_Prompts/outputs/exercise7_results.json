@@ -1,0 +1,93 @@
+{
+    "exercise": "Exercise 7",
+    "summarization": {
+        "executive_abstract": {
+            "output": "",
+            "latency_ms": 2173.71,
+            "prompt_tokens": 1082,
+            "completion_tokens": 800,
+            "error": ""
+        },
+        "action_item_list": {
+            "output": "- Owner: Anita Sharma; Task: Implement fixture inspection checklist; Deadline: 12 September  \n- Owner: Priya Menon; Task: Complete M-450 preventive maintenance inspection; Deadline: 15 September  \n- Owner: Arjun Das; Task: Confirm receipt of 600 bearings; Deadline: 13 September",
+            "latency_ms": 1732.63,
+            "prompt_tokens": 1071,
+            "completion_tokens": 800,
+            "error": ""
+        },
+        "technical_summary": {
+            "output": "**Technical Summary – Production Review Meeting (10 Sept 2026)**  \n\n| Item | Detail |\n|------|--------|\n| **Attendees** | Ravi Kumar (Plant Manager), Anita Sharma (Production Engineer), Suresh Rao (Quality Manager), Priya Menon (Maintenance Manager), Arjun Das (Supply Chain Manager) |\n| **Production Target** | 1,200 motor assemblies (planned) |\n| **Actual Production** | 1,080 assemblies (90 % of target) |\n| **Shortfall Cause** | 14‑hour shutdown of M‑450 line due to hydraulic pressure system failure |\n| **Maintenance Action** | Hydraulic pump replaced; cost ₹48,000; repair completed 8 Sept at 6:30 PM |\n| **Quality Inspection** | 1,050 assemblies inspected; 42 defects recorded (4 % defect rate) |\n| **Defect Breakdown** | • Incorrect shaft alignment – 18 assemblies (largest category)  <br>• Surface scratches – 11 assemblies  <br>• Incorrect wiring – 8 assemblies  <br>• Other minor defects – 5 assemblies |\n| **Defect Source** | Shaft alignment defects concentrated on M‑450 line |\n| **Quality Recommendation** | Check alignment fixture at start of every shift; fixture inspection checklist to be introduced 12 Sept |\n| **Machine Efficiency** | • M‑450 line – 82 % average efficiency  <br>• M‑320 line – 91 % average efficiency |\n| **Equipment Age** | M‑450 – 7 years; M‑320 – 3 years |\n| **Preventive Maintenance Plan** | Inspection of M‑450 line (hydraulic system, electrical connections, bearings, alignment fixture) scheduled 15 Sept; expected duration 6 hours |\n| **Raw Material Status** | • Steel sheets sufficient for ~9 production days  <br>• Shortage of bearing for M‑450 assembly; supplier to deliver 600 bearings on 13 Sept (normal weekly requirement ~450) |\n| **Shipment Commitments** | Three customer orders to dispatch 12–14 Sept; material shortage confirmed not to affect shipments |\n| **Safety Report** | No lost‑time accidents; 2 minor observations: <br>• Oil spill near M‑450 maintenance area (cleaned immediately)  <br>• Operator not wearing safety glasses (reminder issued) |\n| **Next Week Production Target** | 1,200 assemblies |\n| **Setup Time Optimization** | Anita proposes reducing setup time by ~30 min per batch; engineering team to test new procedure on 16 Sept |\n| **Shaft Alignment Defect Target** | Reduce from 18 assemblies/week to <10 assemblies/week by end of September |\n| **Agreed Actions** | 1. Anita – implement fixture inspection checklist by 12 Sept  <br>2. Priya – complete M‑450 preventive maintenance inspection on 15 Sept  <br>3. Arjun – confirm receipt of 600 bearings on 13 Sept  <br>4. Suresh – monitor shaft alignment defects daily  <br>5. Engineering team – test setup optimization on 16 Sept |\n| **Next Meeting** | 20 Sept 2026 (action owners to send status updates before meeting) |\n\n*All figures, dates, times, costs, and defect counts are taken directly from the meeting transcript.*",
+            "latency_ms": 1833.1,
+            "prompt_tokens": 1093,
+            "completion_tokens": 797,
+            "error": ""
+        }
+    },
+    "professional_emails": {
+        "formal": {
+            "output": "",
+            "latency_ms": 5423.83,
+            "prompt_tokens": 241,
+            "completion_tokens": 800,
+            "error": ""
+        },
+        "empathetic": {
+            "output": "",
+            "latency_ms": 8394.06,
+            "prompt_tokens": 245,
+            "completion_tokens": 800,
+            "error": ""
+        },
+        "assertive": {
+            "output": "",
+            "latency_ms": 6482.8,
+            "prompt_tokens": 241,
+            "completion_tokens": 800,
+            "error": ""
+        }
+    },
+    "content_creation": {
+        "output": "",
+        "latency_ms": 8791.29,
+        "prompt_tokens": 293,
+        "completion_tokens": 800,
+        "error": ""
+    },
+    "ablation_study": {
+        "remove_role": {
+            "output": "**Subject:** Delivery Update for PO‑4471 – Revised Schedule  \n\nDear [Recipient Name],\n\nWe regret to inform you that the delivery of 400 units under PO‑4471, originally scheduled for 12 Sep, will now be available on 21 Sep. A casting failure at a sub‑supplier has delayed production. We are expediting freight to minimize impact and will keep you updated on progress. We appreciate your understanding and remain committed to meeting your needs.\n\nSincerely,  \n[Your Name]  \n[Your Position]  \n[Company]",
+            "latency_ms": 8071.71,
+            "prompt_tokens": 157,
+            "completion_tokens": 736,
+            "error": ""
+        },
+        "remove_context": {
+            "output": "",
+            "latency_ms": 5681.1,
+            "prompt_tokens": 154,
+            "completion_tokens": 800,
+            "error": ""
+        },
+        "remove_tone": {
+            "output": "",
+            "latency_ms": 8319.25,
+            "prompt_tokens": 171,
+            "completion_tokens": 800,
+            "error": ""
+        },
+        "remove_word_count": {
+            "output": "**Subject:** Revised Delivery Date for PO‑4471 – 21 September  \n\nDear [Client Contact Name],\n\nI am writing to inform you that, due to a casting failure at one of our sub‑suppliers, the delivery of the 400 units ordered under PO‑4471 will now occur on **21 September** instead of the originally scheduled 12 September.\n\nTo mitigate the impact of this delay, we will arrange **expedited freight** for the shipment, ensuring that the units reach you as quickly as possible.\n\nWe regret any inconvenience this may cause and apologize for the delay. Please let me know if you have any questions or require further assistance.\n\nThank you for your understanding.\n\nBest regards,\n\n[Your Name]  \nSenior Account Manager  \n[Company Name]  \n[Phone] | [Email]",
+            "latency_ms": 6272.54,
+            "prompt_tokens": 176,
+            "completion_tokens": 459,
+            "error": ""
+        },
+        "remove_output_format": {
+            "output": "",
+            "latency_ms": 5016.98,
+            "prompt_tokens": 175,
+            "completion_tokens": 800,
+            "error": ""
+        }
+    }
+}

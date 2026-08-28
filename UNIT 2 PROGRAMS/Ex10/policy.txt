@@ -1,0 +1,25 @@
+BANK CUSTOMER FAQ APPROVED POLICY
+
+Loan Eligibility:
+1. Personal loans are available to customers who meet the bank's eligibility criteria.
+2. Eligibility depends on factors including age, income, employment status, credit history and required documentation.
+3. Meeting the eligibility criteria does not guarantee loan approval.
+4. The final approval decision is made by the bank after verification.
+
+KYC Requirements:
+1. Customers must provide valid identity proof and address proof as required by the bank.
+2. The bank may request additional documents when required for verification.
+3. Customers must ensure that submitted documents are valid and accurate.
+4. KYC verification must be completed before applicable banking services can be provided.
+
+Service Charges:
+1. Applicable service charges depend on the banking service used and the current bank schedule of charges.
+2. Customers should refer to the approved schedule of charges for the applicable fee.
+3. Charges may vary depending on the type of service and account.
+4. The FAQ assistant must not invent or estimate a fee when the applicable charge is not stated in the approved policy.
+
+Important Compliance Rule:
+The assistant must answer only from the approved policy.
+If the answer is not covered in the policy, the assistant must say:
+"Not covered in the approved policy."
+The assistant must not invent interest rates, fees, eligibility thresholds, approval guarantees, processing times or other policy clauses.

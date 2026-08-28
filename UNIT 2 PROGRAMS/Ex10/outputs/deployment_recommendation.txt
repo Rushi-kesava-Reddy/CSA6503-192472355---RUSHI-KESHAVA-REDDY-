@@ -1,0 +1,27 @@
+
+EXERCISE 10 - DEPLOYMENT RECOMMENDATION
+=======================================
+
+Best Prompting Strategy:
+role_prompting
+
+Weighted Score:
+4.76/5
+
+Average Latency:
+1.546 seconds
+
+Inter-Rater Agreement:
+100.00%
+
+Recommendation:
+The role_prompting strategy is recommended as the
+best-performing strategy based on the evaluation rubric.
+
+Before production deployment, the bank should perform additional
+human review, compliance validation, security testing and monitoring.
+
+The FAQ assistant must continue to use the approved bank policy
+as its source of truth and must not invent fees, interest rates,
+eligibility thresholds, approval guarantees or unsupported policy
+information.

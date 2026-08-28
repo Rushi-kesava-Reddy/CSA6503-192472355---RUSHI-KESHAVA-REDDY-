@@ -1,0 +1,11 @@
+farmer_id,crop,district,soil,weather,language,advisory,characters,under_160_chars,temperature,top_p,prompt_tokens,completion_tokens,latency_ms,estimated_cost,fallback_used,error
+1,Rice,Nellore,Clay,Heavy rain expected,English,,0,True,0.4,1.0,155,120,1021.32,0.0,False,
+2,Cotton,Warangal,Black soil,Dry and sunny,English,,0,True,0.4,1.0,156,120,727.35,0.0,False,
+3,Groundnut,Anantapur,Red soil,Hot and dry,English,,0,True,0.4,1.0,158,120,792.18,0.0,False,
+4,Chilli,Guntur,Loamy,Cloudy with moderate rain,English,,0,True,0.4,1.0,159,120,663.91,0.0,False,
+5,Maize,Karimnagar,Black soil,Moderate rainfall,English,,0,True,0.4,1.0,157,120,625.43,0.0,False,
+6,Tomato,Kolar,Red loam,Humid and cloudy,English,,0,True,0.4,1.0,158,120,1034.55,0.0,False,
+7,Paddy,Thanjavur,Alluvial,Continuous rain,English,,0,True,0.4,1.0,157,120,931.93,0.0,False,
+8,Sugarcane,Kolhapur,Loamy,Warm with moderate rain,English,,0,True,0.4,1.0,160,120,727.8,0.0,False,
+9,Soybean,Indore,Black soil,Intermittent rain,English,,0,True,0.4,1.0,158,120,727.55,0.0,False,
+10,Wheat,Ludhiana,Alluvial,Cool and dry,English,,0,True,0.4,1.0,157,120,624.2,0.0,False,

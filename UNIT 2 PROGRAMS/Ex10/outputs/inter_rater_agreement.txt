@@ -1,0 +1,6 @@
+INTER-RATER AGREEMENT
+=====================
+
+Total responses: 50
+Agreements within 0.5 points: 50
+Agreement percentage: 100.00%

@@ -1,0 +1,8 @@
+COST AND LATENCY ANALYSIS
+=========================
+
+Total responses: 50
+Total estimated input tokens: 12500
+Total estimated output tokens: 5000
+Relative cost index: 17.50
+Average latency: 2.133 seconds
