@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Student Support System</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 50px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 180px;
+            padding: 20px;
+            font-size: 20px;
+            border: 1px solid #999;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 15px 40px;
+            font-size: 20px;
+            border: 1px solid #777;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e0e0e0;
+        }
+
+        button:disabled {
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        #answer {
+            margin-top: 35px;
+            padding: 25px;
+            min-height: 80px;
+            background: #eeeeee;
+            border-radius: 12px;
+            text-align: left;
+            font-size: 20px;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎓 AI Student Support System</h1>
+
+        <p class="subtitle">
+            Ask your academic questions below
+        </p>
+
+        <textarea
+            id="question"
+            placeholder="Example: Explain the difference between BERT and GPT."></textarea>
+
+        <br>
+
+        <button id="askButton" onclick="askAI()">
+            Ask AI
+        </button>
+
+        <div id="answer">
+            AI response will appear here...
+        </div>
+
+    </div>
+
+
+    <script>
+
+        async function askAI() {
+
+            const questionBox = document.getElementById("question");
+            const answerBox = document.getElementById("answer");
+            const askButton = document.getElementById("askButton");
+
+            const question = questionBox.value.trim();
+
+            // Check empty question
+            if (question === "") {
+                answerBox.innerText = "Please enter a question.";
+                return;
+            }
+
+            // Disable button while AI is responding
+            askButton.disabled = true;
+            askButton.innerText = "Thinking...";
+
+            answerBox.innerText = "AI is thinking...";
+
+            try {
+
+                const response = await fetch("/ask", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        question: question
+                    })
+                });
+
+                // Check server response
+                if (!response.ok) {
+                    throw new Error(
+                        "Server error: " + response.status
+                    );
+                }
+
+                const data = await response.json();
+
+                // Display AI response
+                if (data.answer) {
+                    answerBox.innerText = data.answer;
+                } else {
+                    answerBox.innerText =
+                        "Error: No response received from AI.";
+                }
+
+            } catch (error) {
+
+                console.error("Error:", error);
+
+                answerBox.innerText =
+                    "Connection error: " + error.message +
+                    "\n\nMake sure Flask is running using:\npython app.py";
+            }
+
+            finally {
+
+                // Enable button again
+                askButton.disabled = false;
+                askButton.innerText = "Ask AI";
+
+            }
+        }
+
+
+        // Press Ctrl + Enter to ask AI
+        document.getElementById("question").addEventListener(
+            "keydown",
+            function (event) {
+
+                if (event.ctrlKey && event.key === "Enter") {
+                    askAI();
+                }
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>
